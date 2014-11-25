@@ -1,5 +1,5 @@
 var changeLanguage = function(){
-	var array = ["correr", "andar de bike", "jogar futebol", "skate"];
+	var array = ["correr", "andar de bike", "jogar futebol", "andar de skate"];
 	var i = 1;
 	setInterval(function(){
 		$('.changeLanguage').text(array[i]);
