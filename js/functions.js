@@ -7,13 +7,13 @@ var changeLanguage = function(){
 		if (i == array.length){
 			i=0
 		}
-	},1000)
+	},1500)
 	
 }
 
 var pluginMask = function(){
-	$('.datetime').mask('00/00/0000 00:00:00');
-	$('.cep').mask('00000-000');
+	// $('.datetime').mask('00/00/0000 00:00:00');
+	// $('.cep').mask('00000-000');
 }
 
 var selectBox = function(){
