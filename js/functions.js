@@ -16,6 +16,12 @@ var pluginMask = function(){
 	$('.cep').mask('00000-000');
 }
 
+var selectBox = function(){
+	$('.box-select .dropdown-menu li a').livequery('click', function(){
+		$('.box-select .activity').text($(this).data('val'))
+	});
+}
+
 var callPlugins = function(){
 	pluginMask();	
 }
@@ -23,4 +29,5 @@ var callPlugins = function(){
 $(document).ready(function(){
 	changeLanguage();
 	callPlugins();
+	selectBox();
 })
