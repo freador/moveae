@@ -60,38 +60,58 @@
                 </div>                
 
                 <div class="col-md-12 col-xs-12 interess">
-                    <div class="col-md-3 col-xs-12 box-select ">
-                        escolha uma atividade
-                        <br/>
-                        <div class="dropdown dropdown-toggle"  data-toggle="dropdown" role="button" aria-expanded="false">
-                           <span class="activity"> selecione</span> <span class="caret"></span>
-  
+                    <div class="part-1">
+                        <div class="col-md-3 col-xs-12 box-select ">
+                            Nome
+                            <br/>
+                            <input type="text" class="dropdown nome" placeholder="Digite seu nome"/>
+                        </div>                        
+                        <div class="col-md-3 col-xs-12 box-select ">
+                            E-mail
+                            <br/>
+                            <input type="text" class="dropdown email" placeholder="Digite seu e-mail"/>
                         </div>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="#" data-val="corrida">Corrida</a></li>
-                            <li><a href="#" data-val="ciclismo">Ciclismo</a></li>
-                            <li><a href="#" data-val="futebol">Futebol</a></li>
-                            <li><a href="#" data-val="skate">Skate</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-md-3 col-xs-12 box-select">
-                        melhor dia / horário
-                        <br/>
-                        <input type="datetime" class="dropdown datetime" placeholder="dia e horário"/>
-
-                    </div>                    
-
-                    <div class="col-md-3 col-xs-12 box-select">
-                        onde você está?
-                        <br/>
-                        <input type="datetime" class="dropdown cep" placeholder="cep ou bairro" />
+                        <div class="col-md-3 col-xs-12 box-select select-last">
+                            pronto?
+                            <br/>
+                            <input type="button" class="dropdown step-2" value="ok, vamos lá!"/>
+                        </div>
 
                     </div>
+                    <div class="part-2">
+                        <div class="col-md-3 col-xs-12 box-select ">
+                            escolha uma atividade
+                            <br/>
+                            <div class="dropdown dropdown-toggle"  data-toggle="dropdown" role="button" aria-expanded="false">
+                               <span class="activity"> selecione</span> <span class="caret"></span>
+      
+                            </div>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#" data-val="corrida">Corrida</a></li>
+                                <li><a href="#" data-val="ciclismo">Ciclismo</a></li>
+                                <li><a href="#" data-val="futebol">Futebol</a></li>
+                                <li><a href="#" data-val="skate">Skate</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 col-xs-12 box-select">
+                            melhor dia / horário
+                            <br/>
+                            <input type="datetime" class="dropdown datetime" placeholder="dia e horário"/>
 
-                    <div class="col-md-3 col-xs-12 box-select select-last">
-                        pronto?
-                        <br/>
-                        <input type="button" class="dropdown" value="ok, vamos lá!"/>
+                        </div>                    
+
+                        <div class="col-md-3 col-xs-12 box-select">
+                            onde você está?
+                            <br/>
+                            <input type="datetime" class="dropdown cep" placeholder="cep ou bairro" />
+
+                        </div>
+
+                        <div class="col-md-3 col-xs-12 box-select select-last">
+                            pronto?
+                            <br/>
+                            <input type="button" class="dropdown enviar" value="Enviar"/>
+                        </div>
                     </div>
                     
                 </div>

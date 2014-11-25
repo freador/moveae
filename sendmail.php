@@ -1,27 +1,32 @@
 <?php
 
 
-$nome = $_POST['nome'];
+$nome = $_POST['name'];
 
 $email = $_POST['email'];
 
-$msg = $_POST['msg'];
+$act = $_POST['activity'];
+
+$datetime = $_POST['datatime'];
+
+$cep = $_POST['cep'];
 
 
+$email_destino="freador@gmail.com";
 
-$email_destino="contato@moveae.com.br";
+$mensagem = "Nome: ".$nome." \nEmail: ".$email." \n Atividade: ".$act." \n Data & Hora:".$datetime."\n Bairro onde mora:".$cep."\n";
 
-$mensagem = "Nome: ".$nome." \nEmail: ".$email." \n Mensagem: ".$msg." \n";
-
-$msg_reply = "Olá  ".$nome."\n\nA mensagem enviada foi:\n".$mensagem."\nObrigado por entrar em contato conosco. Responderemos o mais rápido possivel.!\n\nEsta é uma mensagem automática de confirmação.\n\nPor Favor não responda este e-mail.\n";
+$msg_reply = "Olá  ".$nome."\n\nA mensagem enviada foi enviada com sucesso.\nObrigado por entrar em contato conosco. Responderemos o mais rápido possivel.!\n\nEsta é uma mensagem automática de confirmação.\n\nPor Favor não responda este e-mail.\n";
 
 if(mail($email_destino, "Contato Mova ae",$mensagem, "From:$nome<$email>")){
 
-mail("$nome<$email>", "Seu contato foi enviado!", $msg_reply,  $headers);
+if ( $act != nil &&  $datetime != nil && $cep != nil){
+	mail("$nome<$email>", "Seu contato foi enviado!", $msg_reply,  $headers);
+}
 
 echo "Email Enviado";
 
-}else{echo "email não enviado \n utilize o contato@fellipeguimaraes.com.br";
+}else{echo "email não enviado \n utilize o contato@moveae.com.br";
 
 }
 

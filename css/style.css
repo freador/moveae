@@ -187,3 +187,6 @@ color: #ff4c99 !important;
 :-ms-input-placeholder {  
    color: #3cffab;  
 }
+
+.part-1{}
+.part-2{ display: none;}
