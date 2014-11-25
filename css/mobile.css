@@ -1,0 +1,21 @@
+@media  all and (max-width:760px) {
+
+
+.text p {
+color: white;
+font-weight: normal;
+font-size: 1.6em;
+width: 100%;
+}
+
+.navbar-brand img{
+	width: 150px;
+}
+
+/*Final do arquivo*/
+
+
+
+}
+
+
