@@ -4,7 +4,7 @@ body{
 
 .video-container {
 background-size: cover;
-background: url("../imagens/testeai.png");
+background: url("https://s3-sa-east-1.amazonaws.com/fellipeguimaraes/MoveAe/testeai.png");
 z-index: -99;
 position: fixed;
 right: 0;
